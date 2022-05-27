@@ -1,7 +1,9 @@
 import matplotlib.pyplot as plt
 
-input_values = [1, 6, 11, 12, 16, 19, 24]
-plt.plot(input_values, linewidth = 5)
+x_values = [1, 2, 3, 4, 5]
+y_valeus = [2, 4, 8, 16, 28]
+
+plt.scatter(x_values, y_valeus, s = 100)
 
 # Define the chart title 
 plt.title("Square Numbers", fontsize = 24)
@@ -11,6 +13,6 @@ plt.xlabel("Value", fontsize = 14)
 plt.ylabel("Square of Value", fontsize = 14)
 
 # Set the size of tag labels
-plt.tick_params(axis = 'both', labelsize = 14)
+plt.tick_params(axis='both', which='major', labelsize = 14)
 
 plt.show()
